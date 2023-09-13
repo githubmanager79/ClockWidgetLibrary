@@ -12,31 +12,31 @@
 
     <name>ClockWidgetLibrary</name>
     <description>ClockWidgetLibrary is cool</description>
-    <url>Link to your project</url>
+    <url>https://github.com/githubmanager79/ClockWidgetLibrary</url>
 
     <!-- Лицензии -->
     <licenses>
         <license>
-            <name>License Name (e.g., The Apache License, Version 2.0)</name>
-            <url>Link to license</url>
+            <name>MIT License</name>
+            <url>https://opensource.org/licenses/MIT</url>
         </license>
     </licenses>
 
     <!-- Информация о разработчиках -->
     <developers>
         <developer>
-            <name>Your Name</name>
-            <email>your@email.com</email>
-            <organization>Your Organization</organization>
-            <organizationUrl>Organization URL</organizationUrl>
+            <name>Bohdan Potorochyn</name>
+            <email>p.bogdanvladimirovich@gmail.com</email>
+            <organization>MyOrganization</organization>
+            <organizationUrl>http://ec2-18-117-125-236.us-east-2.compute.amazonaws.com:8000</organizationUrl>
         </developer>
     </developers>
 
     <!-- Информация о системе управления исходным кодом -->
     <scm>
-        <connection>scm:git:git://github.com/username/repo.git</connection>
-        <developerConnection>scm:git:ssh://github.com/username/repo.git</developerConnection>
-        <url>https://github.com/username/repo</url>
+        <connection>scm:git:git://github.com/githubmanager79/ClockWidgetLibrary.git</connection>
+        <developerConnection>scm:git:ssh://github.com/githubmanager79/ClockWidgetLibrary.git</developerConnection>
+        <url>https://github.com/githubmanager79/ClockWidgetLibrary</url>
     </scm>
 
     <!-- Информация для развертывания -->
