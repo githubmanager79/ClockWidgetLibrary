@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Основная информация проекта -->
+    <groupId>io.github</groupId>
+    <artifactId>githubmanager79</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+
+    <name>ClockWidgetLibrary</name>
+    <description>ClockWidgetLibrary is cool</description>
+    <url>Link to your project</url>
+
+    <!-- Лицензии -->
+    <licenses>
+        <license>
+            <name>License Name (e.g., The Apache License, Version 2.0)</name>
+            <url>Link to license</url>
+        </license>
+    </licenses>
+
+    <!-- Информация о разработчиках -->
+    <developers>
+        <developer>
+            <name>Your Name</name>
+            <email>your@email.com</email>
+            <organization>Your Organization</organization>
+            <organizationUrl>Organization URL</organizationUrl>
+        </developer>
+    </developers>
+
+    <!-- Информация о системе управления исходным кодом -->
+    <scm>
+        <connection>scm:git:git://github.com/username/repo.git</connection>
+        <developerConnection>scm:git:ssh://github.com/username/repo.git</developerConnection>
+        <url>https://github.com/username/repo</url>
+    </scm>
+
+    <!-- Информация для развертывания -->
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
+
+    <!-- Зависимости проекта (если есть) -->
+    <dependencies>
+        <!-- Пример зависимости -->
+        <!--
+        <dependency>
+            <groupId>group-id-of-dependency</groupId>
+            <artifactId>artifact-id-of-dependency</artifactId>
+            <version>version-of-dependency</version>
+        </dependency>
+        -->
+    </dependencies>
+
+    <!-- Плагины -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>1.6</version>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            
+            <!-- Другие плагины для вашего проекта -->
+        </plugins>
+    </build>
+</project>
