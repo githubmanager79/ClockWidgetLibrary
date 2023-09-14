@@ -7,7 +7,7 @@
     <!-- Основная информация проекта -->
     <groupId>io.github</groupId>
     <artifactId>githubmanager79</artifactId>
-    <version>1.0.9</version>
+    <version>1.0.10</version>
     <packaging>jar</packaging>
 
     <name>ClockWidgetLibrary</name>
@@ -63,7 +63,7 @@
         <dependency>
             <groupId>androidx.lifecycle</groupId>
             <artifactId>lifecycle-common</artifactId>
-            <version>2.6.1</version>
+            <version>2.6.2</version>
         </dependency>
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
