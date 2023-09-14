@@ -7,7 +7,7 @@
     <!-- Основная информация проекта -->
     <groupId>io.github</groupId>
     <artifactId>githubmanager79</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>jar</packaging>
 
     <name>ClockWidgetLibrary</name>
