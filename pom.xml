@@ -7,7 +7,7 @@
     <!-- Основная информация проекта -->
     <groupId>io.github</groupId>
     <artifactId>githubmanager79</artifactId>
-    <version>1.0.16</version>
+    <version>1.0.17</version>
     <packaging>jar</packaging>
 
     <name>ClockWidgetLibrary</name>
@@ -59,8 +59,6 @@
     </properties>
 
 <build>
-    <sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
-    <testSourceDirectory>${project.basedir}/src/test/kotlin</testSourceDirectory>
     <plugins>
         <plugin>
             <artifactId>kotlin-maven-plugin</artifactId>
