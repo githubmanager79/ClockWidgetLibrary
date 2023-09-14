@@ -7,7 +7,7 @@
     <!-- Основная информация проекта -->
     <groupId>io.github</groupId>
     <artifactId>githubmanager79</artifactId>
-    <version>1.0.18</version>
+    <version>1.0.20</version>
     <packaging>jar</packaging>
 
     <name>ClockWidgetLibrary</name>
@@ -70,14 +70,14 @@
             <artifactId>kotlin-stdlib</artifactId>
             <version>1.7.20</version> 
         </dependency>
-
+<!-- 
         <dependency>
             <groupId>com.android</groupId>
             <artifactId>android</artifactId>
             <version>8.1.1</version>
             <scope>provided</scope>
         </dependency>
-
+ -->
         <dependency>
             <groupId>androidx.appcompat</groupId>
             <artifactId>appcompat</artifactId>
