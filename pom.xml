@@ -7,7 +7,7 @@
     <!-- Основная информация проекта -->
     <groupId>io.github</groupId>
     <artifactId>githubmanager79</artifactId>
-    <version>1.0.6</version>
+    <version>1.0.7</version>
     <packaging>jar</packaging>
 
     <name>ClockWidgetLibrary</name>
@@ -73,9 +73,14 @@
         <dependency>
             <groupId>androidx.appcompat</groupId>
             <artifactId>appcompat</artifactId>
-            <version>1.6.1</version> 
-            <scope>provided</scope>
-    </dependency>
+            <version>1.6.1</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>androidx.lifecycle</groupId>
+                    <artifactId>lifecycle-common</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
     </dependencies>
 
     <!-- Плагины -->
