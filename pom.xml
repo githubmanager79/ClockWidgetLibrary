@@ -7,7 +7,7 @@
     <!-- Основная информация проекта -->
     <groupId>io.github</groupId>
     <artifactId>githubmanager79</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.3</version>
     <packaging>jar</packaging>
 
     <name>ClockWidgetLibrary</name>
@@ -51,16 +51,26 @@
         </repository>
     </distributionManagement>
 
+    <repositories>
+        <repository>
+            <id>android</id>
+            <url>https://maven.google.com</url>
+        </repository>
+    </repositories>
+
     <!-- Зависимости проекта (если есть) -->
     <dependencies>
-        <!-- Пример зависимости -->
-        <!--
         <dependency>
-            <groupId>group-id-of-dependency</groupId>
-            <artifactId>artifact-id-of-dependency</artifactId>
-            <version>version-of-dependency</version>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-stdlib</artifactId>
+            <version>1.7.20</version> 
         </dependency>
-        -->
+        <dependency>
+            <groupId>com.android.support</groupId>
+            <artifactId>appcompat-v7</artifactId>
+            <version>28.0.0</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 
     <!-- Плагины -->
@@ -78,6 +88,23 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <plugin>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-maven-plugin</artifactId>
+                <version>1.7.20</version> 
+                <executions>
+                    <execution>
+                        <id>compile</id>
+                        <goals> <goal>compile</goal> </goals>
+                    </execution>
+                    <execution>
+                        <id>test-compile</id>
+                        <goals> <goal>test-compile</goal> </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-gpg-plugin</artifactId>
