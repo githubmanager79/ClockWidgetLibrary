@@ -4,17 +4,17 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <!-- Основная информация проекта -->
+
     <groupId>io.github</groupId>
     <artifactId>githubmanager79</artifactId>
-    <version>1.0.20</version>
+    <version>1.0.21</version>
     <packaging>jar</packaging>
 
     <name>ClockWidgetLibrary</name>
     <description>ClockWidgetLibrary is cool</description>
     <url>https://github.com/githubmanager79/ClockWidgetLibrary</url>
 
-    <!-- Лицензии -->
+
     <licenses>
         <license>
             <name>MIT License</name>
@@ -22,7 +22,7 @@
         </license>
     </licenses>
 
-    <!-- Информация о разработчиках -->
+
     <developers>
         <developer>
             <name>Bohdan Potorochyn</name>
@@ -32,14 +32,13 @@
         </developer>
     </developers>
 
-    <!-- Информация о системе управления исходным кодом -->
+
     <scm>
         <connection>scm:git:git://github.com/githubmanager79/ClockWidgetLibrary.git</connection>
         <developerConnection>scm:git:ssh://github.com/githubmanager79/ClockWidgetLibrary.git</developerConnection>
         <url>https://github.com/githubmanager79/ClockWidgetLibrary</url>
     </scm>
 
-    <!-- Информация для развертывания -->
     <distributionManagement>
         <snapshotRepository>
             <id>ossrh</id>
@@ -58,7 +57,7 @@
         </repository>
     </repositories>
 
-    <!-- Зависимости проекта (если есть) -->
+
     <dependencies>
         <dependency>
             <groupId>androidx.lifecycle</groupId>
@@ -70,14 +69,14 @@
             <artifactId>kotlin-stdlib</artifactId>
             <version>1.7.20</version> 
         </dependency>
-<!-- 
+
         <dependency>
             <groupId>com.android</groupId>
             <artifactId>android</artifactId>
             <version>8.1.1</version>
             <scope>provided</scope>
         </dependency>
- -->
+
         <dependency>
             <groupId>androidx.appcompat</groupId>
             <artifactId>appcompat</artifactId>
@@ -92,7 +91,7 @@
         </dependency>
     </dependencies>
 
-    <!-- Плагины -->
+
     <build>
         <plugins>
             <plugin>
@@ -146,7 +145,7 @@
                 </executions>
             </plugin>
             
-            <!-- Другие плагины для вашего проекта -->
+
         </plugins>
     </build>
 </project>
