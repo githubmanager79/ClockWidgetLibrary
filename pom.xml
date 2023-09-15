@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
 
-    <groupId>io.github</groupId>
-    <artifactId>githubmanager79</artifactId>
-    <version>1.0.23</version>
+    <groupId>io.github.githubmanager79</groupId>
+    <artifactId>clockwidgetlibrary</artifactId>
+    <version>1.0.24</version>
     <packaging>jar</packaging>
 
     <name>ClockWidgetLibrary</name>
