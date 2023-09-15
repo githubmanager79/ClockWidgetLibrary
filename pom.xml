@@ -60,39 +60,42 @@
 
     <dependencies>
         <dependency>
+            <groupId>androidx.lifecycle</groupId>
+            <artifactId>lifecycle-runtime</artifactId>
+            <version>2.6.1</version>
+        </dependency>
+        <dependency>
             <groupId>androidx.core</groupId>
             <artifactId>core-ktx</artifactId>
             <version>1.9.0</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>androidx.lifecycle</groupId>
+                    <artifactId>lifecycle-runtime</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>androidx.lifecycle</groupId>
             <artifactId>lifecycle-runtime-ktx</artifactId>
             <version>2.6.2</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>androidx.lifecycle</groupId>
+                    <artifactId>lifecycle-runtime</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>androidx.activity</groupId>
             <artifactId>activity-compose</artifactId>
             <version>1.7.2</version>
-        </dependency>
-        <dependency>
-            <groupId>androidx.compose.ui</groupId>
-            <artifactId>ui</artifactId>
-            <version>2023.03.00</version>
-        </dependency>
-        <dependency>
-            <groupId>androidx.compose.ui</groupId>
-            <artifactId>ui-graphics</artifactId>
-            <version>2023.03.00</version>
-        </dependency>
-        <dependency>
-            <groupId>androidx.compose.ui</groupId>
-            <artifactId>ui-tooling-preview</artifactId>
-            <version>2023.03.00</version>
-        </dependency>
-        <dependency>
-            <groupId>androidx.compose.material3</groupId>
-            <artifactId>material3</artifactId>
-            <version>2023.03.00</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>androidx.lifecycle</groupId>
+                    <artifactId>lifecycle-runtime</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
@@ -110,6 +113,12 @@
             <artifactId>junit</artifactId>
             <version>1.1.5</version>
             <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>androidx.test</groupId>
+                    <artifactId>monitor</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>androidx.test.espresso</groupId>
@@ -118,29 +127,26 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>androidx.compose.ui</groupId>
-            <artifactId>ui-test-junit4</artifactId>
-            <version>2023.03.00</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>androidx.compose.ui</groupId>
-            <artifactId>ui-tooling</artifactId>
-            <version>2023.03.00</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>androidx.compose.ui</groupId>
-            <artifactId>ui-test-manifest</artifactId>
-            <version>2023.03.00</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
             <groupId>androidx.appcompat</groupId>
             <artifactId>appcompat</artifactId>
             <version>1.6.1</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>androidx.lifecycle</groupId>
+                    <artifactId>lifecycle-runtime</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>androidx.emoji2</groupId>
+                    <artifactId>emoji2</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>androidx.lifecycle</groupId>
+                    <artifactId>lifecycle-process</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
+
 
 
 
