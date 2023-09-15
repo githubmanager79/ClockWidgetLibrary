@@ -7,7 +7,7 @@
 
     <groupId>io.github.githubmanager79</groupId>
     <artifactId>clockwidgetlibrary</artifactId>
-    <version>1.0.25</version>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
 
     <name>ClockWidgetLibrary</name>
@@ -52,84 +52,126 @@
 
     <repositories>
         <repository>
-            <id>android</id>
-            <url>https://maven.google.com</url>
+            <id>google</id>
+            <url>https://maven.google.com/</url>
         </repository>
     </repositories>
 
 
     <dependencies>
         <dependency>
+            <groupId>androidx.core</groupId>
+            <artifactId>core-ktx</artifactId>
+            <version>1.9.0</version>
+        </dependency>
+        <dependency>
             <groupId>androidx.lifecycle</groupId>
-            <artifactId>lifecycle-common</artifactId>
+            <artifactId>lifecycle-runtime-ktx</artifactId>
             <version>2.6.2</version>
         </dependency>
         <dependency>
-            <groupId>org.jetbrains.kotlin</groupId>
-            <artifactId>kotlin-stdlib</artifactId>
-            <version>1.7.20</version> 
+            <groupId>androidx.activity</groupId>
+            <artifactId>activity-compose</artifactId>
+            <version>1.7.2</version>
         </dependency>
-
         <dependency>
-            <groupId>com.android</groupId>
-            <artifactId>android</artifactId>
-            <version>8.1.1</version>
-            <scope>provided</scope>
+            <groupId>androidx.compose.ui</groupId>
+            <artifactId>ui</artifactId>
+            <version>2023.03.00</version>
         </dependency>
-
+        <dependency>
+            <groupId>androidx.compose.ui</groupId>
+            <artifactId>ui-graphics</artifactId>
+            <version>2023.03.00</version>
+        </dependency>
+        <dependency>
+            <groupId>androidx.compose.ui</groupId>
+            <artifactId>ui-tooling-preview</artifactId>
+            <version>2023.03.00</version>
+        </dependency>
+        <dependency>
+            <groupId>androidx.compose.material3</groupId>
+            <artifactId>material3</artifactId>
+            <version>2023.03.00</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>androidx.test</groupId>
+            <artifactId>monitor</artifactId>
+            <version>1.6.1</version>
+        </dependency>
+        <dependency>
+            <groupId>androidx.test.ext</groupId>
+            <artifactId>junit</artifactId>
+            <version>1.1.5</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>androidx.test.espresso</groupId>
+            <artifactId>espresso-core</artifactId>
+            <version>3.5.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>androidx.compose.ui</groupId>
+            <artifactId>ui-test-junit4</artifactId>
+            <version>2023.03.00</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>androidx.compose.ui</groupId>
+            <artifactId>ui-tooling</artifactId>
+            <version>2023.03.00</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>androidx.compose.ui</groupId>
+            <artifactId>ui-test-manifest</artifactId>
+            <version>2023.03.00</version>
+            <scope>test</scope>
+        </dependency>
         <dependency>
             <groupId>androidx.appcompat</groupId>
             <artifactId>appcompat</artifactId>
             <version>1.6.1</version>
-            <type>aar</type>
-            <exclusions>
-                <exclusion>
-                    <groupId>androidx.lifecycle</groupId>
-                    <artifactId>lifecycle-common</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
     </dependencies>
+
 
 
     <build>
         <plugins>
             <plugin>
-                <groupId>com.simpligility.maven.plugins</groupId>
-                <artifactId>android-maven-plugin</artifactId>
-                <version>4.5.0</version>
-                <extensions>true</extensions>
-            </plugin>
-
-            <plugin>
-                <groupId>org.owasp</groupId>
-                <artifactId>dependency-check-maven</artifactId>
-                <version>6.2.2</version> <!-- Укажите актуальную версию -->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>3.0.1</version>
                 <executions>
                     <execution>
+                        <id>attach-sources</id>
                         <goals>
-                            <goal>check</goal>
+                            <goal>jar-no-fork</goal>
                         </goals>
                     </execution>
                 </executions>
             </plugin>
-
             <plugin>
-                <groupId>org.jetbrains.kotlin</groupId>
-                <artifactId>kotlin-maven-plugin</artifactId>
-                <version>1.7.20</version> 
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.1.1</version>
                 <executions>
                     <execution>
-                        <id>compile</id>
-                        <goals> <goal>compile</goal> </goals>
-                    </execution>
-                    <execution>
-                        <id>test-compile</id>
-                        <goals> <goal>test-compile</goal> </goals>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
                     </execution>
                 </executions>
             </plugin>
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-gpg-plugin</artifactId>
@@ -144,8 +186,6 @@
                     </execution>
                 </executions>
             </plugin>
-            
-
         </plugins>
     </build>
 </project>

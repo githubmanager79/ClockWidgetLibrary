@@ -35,9 +35,38 @@ publishing {
     register("release", MavenPublication::class) {
       from(components.findByName("android"))
 
-      groupId = "io.github"
+      groupId = "io.github.githubmanager79"
       artifactId = "clockwidgetlibrary"
       version = "1.0.0"
+
+      pom {
+        name.set("Clock Widget Library")
+        description.set("A library for creating clock widgets")
+        url.set("https://github.com/githubmanager79/ClockWidgetLibrary")
+
+        licenses {
+          license {
+            name.set("MIT License")
+            url.set("https://opensource.org/licenses/MIT")
+          }
+        }
+
+        developers {
+          developer {
+
+            name.set("Bohdan Potorochyn")
+            email.set("p.bogdanvladimirovich@gmail.com")
+            organization.set("MyOrganization")
+            organizationUrl.set("http://ec2-18-117-125-236.us-east-2.compute.amazonaws.com:8000")
+          }
+        }
+
+        scm {
+          connection.set("scm:git:git://github.com/githubmanager79/ClockWidgetLibrary.git")
+          developerConnection.set("scm:git:ssh://github.com/githubmanager79/ClockWidgetLibrary.git")
+          url.set("https://github.com/githubmanager79/ClockWidgetLibrary")
+        }
+      }
 
 //      artifact("$buildDir/outputs/aar/clockwidgetlibrary-release.aar")
     }
@@ -53,6 +82,7 @@ publishing {
     }
   }
 }
+
 
 dependencies {
 
